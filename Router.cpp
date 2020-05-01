@@ -31,7 +31,6 @@ void Router::run() {
 
 				mutexas.lock();
 				std::cout << "|||||||||PAKETAS|||||||||| "<<"ROUTERYJE: "<<this->getName()<<" KELIAUJA IS: "<< packet->getSource() << " I: " << packet->getDestination() << "\n";
-				std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 				bool found = false;
 				std::string source = packet->getSource();
 				std::string destination = packet->getDestination();
