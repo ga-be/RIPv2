@@ -7,6 +7,15 @@
 int main() {
 	
 	Network* network = new Network();
+	std::string msg = "//COMMANDS\n"
+		"addrouter routerName\n"
+		"showtable routerName\n"
+		"deleterouter routerName\n"
+		"addlink routerName1 routerName2\n"
+		"deletelink routerName1 routerName2\n"
+		"sendpacket sourceName1 destName1\n";
+
+	std::cout << msg;
 
 	/*~~~Tests~~
 	network->addRouter("R1");
